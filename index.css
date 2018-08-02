@@ -87,3 +87,53 @@ nav{
     background-color: #ff5c5c;
     padding: 0 1%;
 }
+
+/*_______________________________________*/
+/*__________RESPONSIVE MAX 768___________*/
+/*_______________________________________*/
+
+@media (max-width: 768px){
+
+    /*HEADER 768*/
+
+    header, nav{    
+    }
+
+    .nav-elements{
+        justify-content: center;
+    }
+    .nav-element{
+        display: none;
+    }
+    .menu-button-part{
+        width: 8vh;
+        height: 1vh;
+        margin-top: 5px;
+        background-color: #ff5c5c;
+    }
+
+    /*PORTADA 768*/
+
+    .portada-contenido{
+        padding: 30vh 15%;
+        width: 70%;
+        height: 30vh;
+    }
+   
+   .portada-logo{
+       width: 60%;
+   }
+   
+   .portada-texto{
+       color: white;
+       width: 60%;
+       font-size: 5vw;
+   }
+
+}
+
+/*_______________________________________*/
+/*__________RESPONSIVE MAX 480___________*/
+/*_______________________________________*/
+
+
