@@ -13,6 +13,10 @@ h1{
     font-family: 'Open Sans', sans-serif;
 }
 
+.section-prueba{
+    height: 100vh;
+}
+
 /*________________HEADER_________________*/
 
 header{
@@ -27,6 +31,14 @@ header{
 .header-logo{
     width: 12%;
     visibility: hidden;
+}
+
+.header-fixed{
+    position: fixed;
+}
+
+.header-logo-fixed{
+    visibility: visible;
 }
 
 nav{
@@ -50,6 +62,10 @@ nav{
     background-color: white;
     padding: 3.5vh 1%;
     color: rgb(28,30,55);
+}
+
+.header-mobile{
+    display: none;
 }
 
 
@@ -95,8 +111,24 @@ nav{
 @media (max-width: 768px){
 
     /*HEADER 768*/
+    .header-logo{
+        display:none;
+    }
 
-    header, nav{    
+
+    nav{
+        width: 100%;
+    }
+
+    .header-mobile{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-mobile-logo{
+        width: 50%;
+        visibility: hidden;
     }
 
     .nav-elements{
@@ -106,9 +138,9 @@ nav{
         display: none;
     }
     .menu-button-part{
-        width: 8vh;
-        height: 1vh;
-        margin-top: 5px;
+        width: 35px;
+        height: 5px;
+        margin-bottom: 3px;
         background-color: #ff5c5c;
     }
 
