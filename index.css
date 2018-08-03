@@ -120,10 +120,18 @@ nav{
         width: 100%;
     }
 
+    header{
+        padding: 0 0;
+    }
+
+
     .header-mobile{
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        align-items: center;
+        width: 94%;
+        height: 10vh;
+        padding: 0 3%;
     }
 
     .header-mobile-logo{
@@ -134,12 +142,46 @@ nav{
     .nav-elements{
         justify-content: center;
     }
+    /*nav*/
     .nav-element{
         display: none;
     }
+
+    .header-nav-show{
+        height: 50vh;
+        position: fixed;
+    }
+    .nav-elements{
+        flex-direction: column;
+        font-size: 3vw;
+    }
+
+    .nav{
+        width: 100%;
+    }
+
+    .nav-element-nav-show{
+        font-size: 3vw;
+        display: block;
+        height: 9.8vh;
+        background-color: rgba(28,30,55,0.9);
+        border: 0.1vh solid rgb(37, 38, 61);
+        width: 100%;
+        margin-left: 0;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-contacto-nav-show{
+        padding: 0 0;
+    }
+
+    /*---*/
     .menu-button-part{
         width: 35px;
-        height: 5px;
+        height: 1vh;
         margin-bottom: 3px;
         background-color: #ff5c5c;
     }
@@ -150,6 +192,10 @@ nav{
         padding: 30vh 15%;
         width: 70%;
         height: 30vh;
+    }
+
+    .portada-contenido-nav-show{
+        padding: 40vh 15% 30vh 15%;
     }
    
    .portada-logo{
@@ -168,4 +214,9 @@ nav{
 /*__________RESPONSIVE MAX 480___________*/
 /*_______________________________________*/
 
-
+@media (max-width: 480px){
+    /*HEADER 480*/
+    .nav-element-nav-show{
+        font-size: 5vw;
+    }
+}
