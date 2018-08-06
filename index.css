@@ -211,7 +211,7 @@ nav{
     }
 
     .header-mobile-logo{
-        width: 50%;
+        width: 25%;
         visibility: hidden;
     }
 
@@ -312,7 +312,16 @@ nav{
         font-size: 5vw;
     }
 
+    .header-mobile-logo{
+        width: 40%;
+        visibility: hidden;
+    }
+
     /*NOSOTROS 480*/
+    .nosotros-section{
+        height: 120vh;
+    }
+
     .nosotros-title{
         font-size: 9vw;
     }
