@@ -13,6 +13,11 @@ h1{
     font-family: 'Montserrat', sans-serif;
 }
 
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+}
+
 .section-prueba{
     height: 100vh;
 }
@@ -122,7 +127,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .nosotros-izquierda{
@@ -176,6 +181,10 @@ nav{
 /*_______________________________________*/
 
 @media (max-width: 768px){
+
+    p{
+        font-size: 2.2vw;
+    }
 
     /*HEADER 768*/
     .header-logo{
@@ -275,6 +284,18 @@ nav{
        font-size: 5vw;
    }
 
+   /*NOSOTROS 768*/
+
+   .nosotros-title{
+       font-size: 6vw;
+   }
+   .nosotros-derecha{
+       display:none;
+   }
+   .nosotros-izquierda{
+       width: 100%;
+   }
+
 }
 
 /*_______________________________________*/
@@ -282,8 +303,25 @@ nav{
 /*_______________________________________*/
 
 @media (max-width: 480px){
+    p{
+        font-size: 4.2vw;
+    }
+
     /*HEADER 480*/
     .nav-element-nav-show{
         font-size: 5vw;
+    }
+
+    /*NOSOTROS 480*/
+    .nosotros-title{
+        font-size: 9vw;
+    }
+
+    .nosotros-contenido{
+        margin-top: 10%;
+    }
+
+    .nosotros-iconos{
+        margin-top: 10%;
     }
 }
