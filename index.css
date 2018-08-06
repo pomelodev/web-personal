@@ -10,7 +10,7 @@ section{
 }
 
 h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .section-prueba{
@@ -97,12 +97,79 @@ nav{
     color: white;
     width: 30%;
     font-size: 2.5vw;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .citrico{
     background-color: #ff5c5c;
     padding: 0 1%;
 }
+
+/*_____________NOSOTROS__________________*/
+
+.section-nosotros{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nosotros-title{
+    color: #1C1E37;
+    font-size: 3vw;
+}
+
+.nosotros-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.nosotros-izquierda{
+    width: 60%;
+}
+
+.nosotros-texto{
+    font-family: "Opens Sans", sans-serif;
+    color: #1C1E37;
+}
+
+.nosotros-iconos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.nosotros-icono{
+    width: 12%;
+}
+
+.icono-express{
+    color: rgb(28,30,55);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.7vw;
+}
+
+.nosotros-derecha{
+    background-image: url(img/mendoza.jpg);
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+
+.mapa-violeta{
+    background-color: rgba(28,30,55,0.6);
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+
+
+
+
+
 
 /*_______________________________________*/
 /*__________RESPONSIVE MAX 768___________*/
