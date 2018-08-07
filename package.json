@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pomelodev/web-personal#readme",
   "dependencies": {
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "nodemailer": "^4.6.7"
   }
