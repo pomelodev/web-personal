@@ -244,6 +244,7 @@ footer{
 .direccion-element{
     display: flex;
     align-items: center;
+    font-family: "Open Sans", sans-serif;
 }
 
 .direccion-logo{
@@ -392,11 +393,13 @@ footer{
    .section-contacto{
        flex-direction: column;
        justify-content: center;
+       align-items: flex-start;
    }
 
    .contacto-izquierda{
        width: 100%;
-       height: 25vh;
+       height: auto;
+       margin-bottom: 10%;
    }
 
    .contacto-title{
@@ -405,6 +408,7 @@ footer{
 
    form{
        width: 98%;
+       height: auto;
    }
 
    .form-element{
@@ -469,9 +473,15 @@ footer{
 
     /*CONTACTO 468*/
 
+    .section-contacto{
+    }
+
+    .contacto-izquierda{
+        height: auto;
+    }
     .contacto-title{
         font-size: 9vw;
-    }
+    }    
 
     /*FOOTER 468*/
     .redes{

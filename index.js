@@ -6,10 +6,11 @@ let menuButton = document.getElementById("menu-button");
 let navElementsArray = document.getElementsByClassName("nav-element");
 let navContacto = document.getElementById("nav-contacto");
 let portadaContenido = document.getElementById("portada-contenido");
+let sectionContacto = document.getElementById("section-contacto");
 //------Posiciones------//
 
 let posSectionPortada = sectionPortada.getBoundingClientRect().bottom;
-
+let posSectionContacto = sectionContacto.getBoundingClientRect().top;
 
 //------Animación scroll------//
 
@@ -30,6 +31,13 @@ window.onscroll = ()=>{
     if (window.pageYOffset < posSectionPortada && window.innerWidth <= 768){
         headerMobileLogo.style.visibility = "hidden";
     }
+    if (window.pageYOffset >= posSectionContacto && window.innerWidth > 768){
+        headerLogo.classList.remove("header-logo-fixed");
+    }
+    if(window.pageYOffset < posSectionContacto && window.pageYOffset > posSectionPortada){
+        headerLogo.classList.add("header-logo-fixed");
+    }
+
 };
 
 //------Menu button------//
