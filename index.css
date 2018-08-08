@@ -1,0 +1,492 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+section{
+    padding: 0 15%;
+    height: 100vh;
+    width: 70%;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+}
+
+/*________________HEADER_________________*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: rgba(28,30,55,0.9);
+    padding: 0 3%;
+}
+
+.header-logo{
+    width: 12%;
+    visibility: hidden;
+}
+
+.header-fixed{
+    position: fixed;
+    background-color: rgb(28,30,55);
+}
+
+.header-logo-fixed{
+    visibility: visible;
+}
+
+nav{
+    width: 25%;
+}
+.nav-elements{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.1vw;
+}
+
+.nav-element{
+    margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    height: 3vh;
+}
+
+.nav-contacto{
+    background-color: white;
+    padding: 3.5vh 1%;
+    color: rgb(28,30,55);
+}
+
+.header-mobile{
+    display: none;
+}
+
+
+/*_______________PORTADA_________________*/
+
+.section-portada{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0;
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(28,30,55,0.9);
+}
+
+.fondo-pomelos{
+    background-image : url("img/fondo-pomelos.jpg");
+}
+.portada-contenido{
+     padding: 30vh 15%;
+     width: 70%;
+     height: 30vh;
+ }
+
+.portada-logo{
+    width: 30%;
+}
+
+.portada-texto{
+    color: white;
+    width: 30%;
+    font-size: 2.5vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.citrico{
+    background-color: #ff5c5c;
+    padding: 0 1%;
+}
+
+/*_____________NOSOTROS__________________*/
+
+.section-nosotros{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nosotros-title{
+    color: #1C1E37;
+    font-size: 3vw;
+}
+
+.nosotros-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.nosotros-izquierda{
+    width: 60%;
+}
+
+.nosotros-texto{
+    font-family: "Opens Sans", sans-serif;
+    color: #1C1E37;
+}
+
+.nosotros-iconos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.nosotros-icono{
+    width: 12%;
+}
+
+.icono-express{
+    color: rgb(28,30,55);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.7vw;
+}
+
+.nosotros-derecha{
+    background-image: url(img/mendoza.jpg);
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+
+.mapa-violeta{
+    background-color: rgba(28,30,55,0.6);
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+
+/*_____________CONTACTO________________*/
+
+.section-contacto{
+    height: 90vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C1E37;
+}
+
+.contacto-izquierda{
+    width: 40%;
+    height: 50vh;
+}
+
+.contacto-title{
+    color: white;
+    font-size: 3vw;
+    margin-bottom: 5%;
+}
+
+.contacto-text{
+    color: white;
+}
+
+form{
+    width: 30vw;
+    height: 50vh;
+    text-align: right;
+}
+
+.form-element{
+    display: block;
+    width: 28vw;
+    height: 10%;
+    margin: 3% 0;
+    padding: 2% 1vw;
+    background-color: #373951;
+    border: none;
+    color: white;
+}
+
+.text-area{
+    height: 30%;
+}
+
+.form-button{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    color: #1C1E37;
+    border: none;
+    padding: 2% 4%;
+}
+
+
+
+/*_______________FOOTER__________________*/
+
+footer{
+    height: 10vh;
+    width: 94%;
+    background-color: #FF5C5C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 3%;
+}
+
+.direccion{
+    width: 20%;
+}
+
+.direccion-element{
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.direccion-logo{
+    width: 8%;
+    margin-right: 5%;
+}
+
+.redes{
+    text-align: center;
+    width: 15%;
+}
+
+.redes-logo{
+    width: 15%;
+    margin: 0 2%;
+}
+
+.logo-footer{
+    width: 12%;
+    padding: 0 4%;
+}
+
+
+/*_______________________________________*/
+/*__________RESPONSIVE MAX 768___________*/
+/*_______________________________________*/
+
+@media (max-width: 768px){
+
+    p{
+        font-size: 2.2vw;
+    }
+
+    /*HEADER 768*/
+    .header-logo{
+        display:none;
+    }
+
+
+    nav{
+        width: 100%;
+    }
+
+    header{
+        padding: 0 0;
+    }
+
+
+    .header-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 94%;
+        height: 10vh;
+        padding: 0 3%;
+    }
+
+    .header-mobile-logo{
+        width: 25%;
+        visibility: hidden;
+    }
+
+    .nav-elements{
+        justify-content: center;
+    }
+    /*nav*/
+    .nav-element{
+        display: none;
+    }
+
+    .header-nav-show{
+        height: 50vh;
+        position: fixed;
+    }
+    .nav-elements{
+        flex-direction: column;
+        font-size: 3vw;
+    }
+
+    .nav{
+        width: 100%;
+    }
+
+    .nav-element-nav-show{
+        font-size: 3vw;
+        display: block;
+        height: 9.8vh;
+        background-color: rgba(28,30,55,0.9);
+        border: 0.1vh solid rgb(37, 38, 61);
+        width: 100%;
+        margin-left: 0;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-contacto-nav-show{
+        padding: 0 0;
+    }
+
+    /*---*/
+    .menu-button-part{
+        width: 35px;
+        height: 1vh;
+        margin-bottom: 3px;
+        background-color: #ff5c5c;
+    }
+
+    /*PORTADA 768*/
+
+    .portada-contenido{
+        padding: 30vh 15%;
+        width: 70%;
+        height: 30vh;
+    }
+
+    .portada-contenido-nav-show{
+        padding: 40vh 15% 30vh 15%;
+    }
+   
+   .portada-logo{
+       width: 60%;
+   }
+   
+   .portada-texto{
+       color: white;
+       width: 60%;
+       font-size: 5vw;
+   }
+
+   /*NOSOTROS 768*/
+
+   .nosotros-title{
+       font-size: 6vw;
+   }
+   .nosotros-derecha{
+       display:none;
+   }
+   .nosotros-izquierda{
+       width: 100%;
+   }
+
+   /*CONTACTO 768*/
+
+   .section-contacto{
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+   }
+
+   .contacto-izquierda{
+       width: 100%;
+       height: auto;
+       margin-bottom: 10%;
+   }
+
+   .contacto-title{
+       font-size: 6vw;
+   }
+
+   form{
+       width: 98%;
+       height: auto;
+   }
+
+   .form-element{
+       width: 100%;
+   }
+
+   /*FOOTER 768*/
+   .logo-footer{
+       display: none;
+   }
+
+   .direccion-logo{
+       display: none;
+   }
+
+   .redes{
+       width: 40%;
+       text-align: right;
+   }
+   .redes-logo{
+       width: 15%;
+   }
+
+
+}
+
+/*_______________________________________*/
+/*__________RESPONSIVE MAX 480___________*/
+/*_______________________________________*/
+
+@media (max-width: 480px){
+    p{
+        font-size: 4.2vw;
+    }
+
+    /*HEADER 480*/
+    .nav-element-nav-show{
+        font-size: 5vw;
+    }
+
+    .header-mobile-logo{
+        width: 40%;
+        visibility: hidden;
+    }
+
+    /*NOSOTROS 480*/
+    .nosotros-section{
+        height: 120vh;
+    }
+
+    .nosotros-title{
+        font-size: 9vw;
+    }
+
+    .nosotros-contenido{
+        margin-top: 10%;
+    }
+
+    .nosotros-iconos{
+        margin-top: 10%;
+    }
+
+    /*CONTACTO 468*/
+
+
+    .contacto-izquierda{
+        height: auto;
+    }
+    .contacto-title{
+        font-size: 9vw;
+    }    
+
+    /*FOOTER 468*/
+    .redes{
+        width: 40%;
+    }
+    .redes-logo{
+        width: 25%;
+    }
+
+}
