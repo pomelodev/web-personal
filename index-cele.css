@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding: 0 10%;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+
+p {
+    margin: 0;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.services, .portfolio {
+    min-height: 100vh;
+    margin: 10% 5%;
+}
+
+.services-content, .portfolio-content {
+    margin-top: 5%;
+}
+
+/* Sección Servicios */
+
+.tablet-mobile {
+    display: none;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.circle img {
+    width: 90px;
+}
+
+.info-div {
+    width: 225px;
+    margin-top: 1%;
+}
+
+.info-div p {
+    margin: 3%;
+}
+
+.circle, .info-div {
+    flex-flow: column;
+}
+
+.circles, .circle, .info, .info-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cyan {
+    background-color: rgba(0, 255, 255, 0.7);
+}
+
+.magenta {
+    background-color: rgba(255, 0, 255, 0.7);
+}
+
+.yellow {
+    background-color: rgba(255, 255, 1, 0.7);
+}
+
+.margin {
+    margin-left: -25px;
+}
+
+/* Nuestros Trabajos */
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.portfolio-content img {
+    width: 100%;
+}
+
+/*-----------------------------MEDIA QUERY-------------------------------------------*/
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 5%;
+    }
+    .services, .portfolio {
+        height: auto;
+        margin: 5% 0;
+    }
+    /* Sección Servicios */
+    .desktop {
+        display: none;
+    }
+    .margin {
+        margin-left: 0;
+        margin-top: -25px;
+    }
+    .tablet-mobile {
+        display: block;
+    }
+    .tablet-mobile .circles {
+        flex-flow: column;
+    }
+    .circle img {
+        width: 60px;
+    }
+    .circle h2 {
+        font-size: 1.5em;
+    }
+    .circle p {
+        font-size: 0.9em;
+        margin: 0 10%;
+    }
+    /* Nuestros Trabajos */
+    .portfolio-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .portfolio-content .img-display {
+        display: none;
+    }
+}
