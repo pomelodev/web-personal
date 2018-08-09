@@ -5,18 +5,30 @@
 
 section{
     padding: 0 15%;
-    height: 100vh;
     width: 70%;
 }
 
 h1{
     font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3vw;
+    color: rgb(28,30,55);
+
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    font-weight: bolder;
 }
 
 p{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2vw;
 }
+
+
 
 /*________________HEADER_________________*/
 
@@ -58,6 +70,10 @@ nav{
     font-family: 'Roboto', sans-serif;
     color: white;
     height: 3vh;
+}
+
+.nav-element:hover{
+    cursor: pointer;
 }
 
 .nav-contacto{
@@ -107,13 +123,95 @@ nav{
     padding: 0 1%;
 }
 
-/*_____________NOSOTROS__________________*/
 
-.section-nosotros{
-    height: 100vh;
+
+/*____________SERVICIOS___________ */
+
+.section-services, .section-portfolio {
+    margin: 10% 0;
+}
+
+.services-content, .portfolio-content {
+    margin-top: 5%;
+}
+
+.tablet-mobile {
+    display: none;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 22vw;
+    width: 22vw;
+}
+
+.circle img {
+    width: 30%;
+}
+
+.info-div {
+    width: 25%;
+    margin: 2%;
+}
+
+.info-div p {
+    margin: 5%;
+}
+
+.circle, .info-div {
+    flex-flow: column;
+}
+
+.circles, .circle, .info, .info-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cyan {
+    background-color: rgba(0, 255, 255, 0.7);
+}
+
+.magenta {
+    background-color: rgba(255, 0, 255, 0.7);
+}
+
+.yellow {
+    background-color: rgba(255, 255, 1, 0.7);
+}
+
+.margin {
+    margin-left: -2%;
+}
+
+/*______________PORTFOLIO_________________*/
+
+.section-portfolio{
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.portfolio-content img {
+    width: 100%;
+}
+
+/*_____________NOSOTROS__________________*/
+
+.section-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15%;
 }
 .nosotros-title{
     color: #1C1E37;
@@ -273,6 +371,10 @@ footer{
 /*_______________________________________*/
 
 @media (max-width: 768px){
+    h1{
+        font-size: 6vw;
+    }
+   
 
     p{
         font-size: 2.2vw;
@@ -375,10 +477,68 @@ footer{
        width: 60%;
        font-size: 5vw;
    }
+    /*SERVICIOS 768*/
+
+    .services-content, .portfolio-content {
+        margin-top: 10%;
+    }
+
+    .section-services{
+        /* height: auto; */
+        padding-top: 5vh;
+    }
+
+    .services-title{
+        margin-top: 15%;
+    }
+
+    .desktop {
+        display: none;
+    }
+    .margin {
+        margin-left: 0;
+        margin-top: -2%;
+    }
+    .tablet-mobile {
+        display: block;
+    }
+    .tablet-mobile .circles {
+        flex-flow: column;
+    }
+
+    .circle{
+        height: 50vw;
+        width: 50vw;
+    }
+    .circle img {
+        width: 20%;
+    }
+    .circle h2 {
+        font-size: 6vw;
+    }
+    .circle p {
+        margin: 0 10%;
+    }
+
+    /*PORTFOLIO 768*/
+    .section-portfolio{
+        min-height: 90vh;
+    }
+   
+    .portfolio-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .portfolio-content .img-display {
+        display: none;
+    }
 
    /*NOSOTROS 768*/
 
-   .nosotros-title{
+   .section-nosotros{
+       min-height: 70vh;
+   }
+
+    .nosotros-title{
        font-size: 6vw;
    }
    .nosotros-derecha{
@@ -443,6 +603,9 @@ footer{
     p{
         font-size: 4.2vw;
     }
+    h1{
+        font-size: 9vw;
+    }
 
     /*HEADER 480*/
     .nav-element-nav-show{
@@ -454,10 +617,14 @@ footer{
         visibility: hidden;
     }
 
-    /*NOSOTROS 480*/
-    .nosotros-section{
-        height: 120vh;
+    /*SERVICIOS 480*/
+
+    .circle{
+        height: 65vw;
+        width: 65vw;
     }
+
+    /*NOSOTROS 480*/
 
     .nosotros-title{
         font-size: 9vw;

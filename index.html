@@ -24,9 +24,9 @@
                             <div class="menu-button-part"></div>
                         </div>
                     </li>
-                    <li class="nav-element">Servicios</li>
-                    <li class="nav-element">Portfolio</li>
-                    <li class="nav-element">Nosotros</li>
+                    <li class="nav-element" id="nav-servicios">Servicios</li>
+                    <li class="nav-element" id="nav-portfolio">Portfolio</li>
+                    <li class="nav-element" id="nav-nosotros">Nosotros</li>
                     <li class="nav-element nav-contacto" id="nav-contacto">Contacto</li>
                 </ul>
             </nav>            
@@ -37,12 +37,94 @@
                 <h1 class="portada-texto">TU WEB CON UN <br>TOQUE <span class="citrico">CÍTRICO</span></h1>
             </div>       
     </section>
-    </div> 
-    <section class="section-nosotros">
+    </div>
+    <section class="section-services" id="section-servicios">
+        <!-- Sección Servicios -->
+        <h1 class="services-title title">
+            ¿Qué
+            <br>hacemos?
+        </h1>
+        <div class="services-content">
+            <div class="desktop">
+                <div class="circles">
+                    <div class="circle cyan">
+                        <img src="Assets/Icons/design-ico.png" alt="">
+                    </div>
+                    <div class="circle magenta margin">
+                        <img src="Assets/Icons/coding-ico.png" alt="">
+                    </div>
+                    <div class="circle yellow margin">
+                        <img src="Assets/Icons/launch-ico.png" alt="">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="info-div">
+                        <h2>Ideamos</h2>
+                        <p>
+                            Creamos el diseño más adecuado para tu web y lo adaptamos a distintas pantallas.
+                        </p>
+                    </div>
+                    <div class="info-div">
+                        <h2>Programamos</h2>
+                        <p>
+                            Utilizamos tecnologías actuales para construir tu página desde cero.
+                        </p>
+                    </div>
+                    <div class="info-div">
+                        <h2>Lanzamos</h2>
+                        <p>
+                            Subimos tu web a un servidor para que cualquiera pueda acceder a ella.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tablet-mobile">
+                <div class="circles">
+                    <div class="circle cyan">
+                        <img src="Assets/Icons/design-ico.png" alt="">
+                        <h2>Ideamos</h2>
+                        <p>
+                            Creamos el diseño más adecuado para tu web y lo adaptamos a distintas pantallas.
+                        </p>
+                    </div>
+                    <div class="circle magenta margin">
+                        <img src="Assets/Icons/coding-ico.png" alt="">
+                        <h2>Programamos</h2>
+                        <p>
+                            Utilizamos tecnologías actuales para construir tu página desde cero.
+                        </p>
+                    </div>
+                    <div class="circle yellow margin">
+                        <img src="Assets/Icons/launch-ico.png" alt="">
+                        <h2>Lanzamos</h2>
+                        <p>
+                            Subimos tu web a un servidor para que cualquiera pueda acceder a ella.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-portfolio" id="section-portfolio">
+        <!-- Nuestro Trabajos -->
+        <h1 class="title">
+            Nuestros
+            <br>Trabajos.
+        </h1>
+        <div class="portfolio-content">
+            <img src="Assets/Images/Faustoweb1.png" alt="">
+            <img src="Assets/Images/Huarpesweb3.png" alt="">
+            <img src="Assets/Images/Faustoweb3.png" alt="">
+            <img src="Assets/Images/Huarpesweb1.png" alt="">
+            <img class="img-display" src="Assets/Images/Faustoweb2.png" alt="">
+            <img class="img-display" src="Assets/Images/Huarpesweb2.png" alt="">
+        </div>
+    </section> 
+    <section class="section-nosotros" id="section-nosotros">
         <h1 class="nosotros-title">¿Quiénes <br>somos?</h1>
         <div class="nosotros-contenido">
             <div class="nosotros-izquierda">
-                <p class="nosotros-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p class="nosotros-texto">Somos un grupo de apasionados por el desarrollo web de la Ciudad de Mendoza, Argentina. Estamos interesados en las tecnologías y diseños más actuales, buscando la mejor experiencia de usuario posible. Trabajamos en tu proyecto con entusiasmo y responsabilidad, teniendo en cuenta cada detalle para lograr el mejor resultado, mientras te mantenemos al tanto del proceso.</p>
                 <div class="nosotros-iconos">
                     <img src="img/html-5-logo.png" alt="" class="nosotros-icono">
                     <img src="img/css-3.png" alt="" class="nosotros-icono">
@@ -60,7 +142,7 @@
     <section class="section-contacto" id="section-contacto">
         <div class="contacto-izquierda">
             <h1 class="contacto-title">¡Envianos tu<br> consulta!</h1>
-            <p class="contacto-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p class="contacto-text">Compartinos tus ideas o las dudas que tengas y nos comunicamos con vos a la brevedad.</p>
         </div>
         <form action="/contact" method="post">
             <input class="form-element" type="text" name="nombre" placeholder="Tu nombre" required>
