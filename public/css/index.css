@@ -99,7 +99,7 @@ nav{
 }
 
 .fondo-pomelos{
-    background-image : url("img/fondo-pomelos.jpg");
+    background-image : url(/img/fondo-pomelos.jpg);
 }
 .portada-contenido{
      padding: 30vh 15%;
@@ -199,11 +199,20 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    width: 70%;
+    padding: 0 15%;
 }
 
-.portfolio-content img {
-    width: 100%;
+.portfolio-content-img {
+    width: 100%;    
 }
+
+.portfolio-content-img:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
 
 /*_____________NOSOTROS__________________*/
 
@@ -253,7 +262,7 @@ nav{
 }
 
 .nosotros-derecha{
-    background-image: url(img/mendoza.jpg);
+    background-image: url(/img/mendoza.jpg);
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
@@ -527,6 +536,8 @@ footer{
    
     .portfolio-content {
         grid-template-columns: 1fr 1fr;
+        width: 100%;
+        padding: 0 0;
     }
     .portfolio-content .img-display {
         display: none;
