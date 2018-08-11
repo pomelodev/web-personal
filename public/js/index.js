@@ -107,25 +107,37 @@ menuButton.addEventListener("click", ()=>{
 /*--------FORM-------*/
 formButton.addEventListener("click", (event)=>{
     event.preventDefault();
-    fetch('http://localhost:3000/contact', {
-        method:'POST',
-        body: JSON.stringify({
-            "nombre":formNombre.value,
-            "email": formEmail.value,
-            "consulta":formConsulta.value 
-        }),
-        headers:{
-            'Content-Type': 'application/json'
+    if(formNombre.value == "" | formEmail.value == "" | formConsulta.value == ""){
+        let message = document.createTextNode("Completá todos los campos");
+        while(formSendMessage.firstChild){
+            formSendMessage.removeChild(formSendMessage.firstChild);
         }
-    }).then(response =>{
-        if(response.ok){
-            return response.json();
-        }
-        throw new Error('Request failed');
-    }, networkError => console.log(networkError.message)
-    ).then(jsonResponse =>{
-        console.log(jsonResponse);
-    });
-    form.reset();
-    formSendMessage.classList.add('form-send-message-visible');
+        formSendMessage.appendChild(message);
+    }else{
+        fetch('http://localhost:3000/contact', {
+            method:'POST',
+            body: JSON.stringify({
+                "nombre":formNombre.value,
+                "email": formEmail.value,
+                "consulta":formConsulta.value 
+            }),
+            headers:{
+                'Content-Type': 'application/json'
+            }
+        }).then(response =>{
+            if(response.ok){
+                return response.json();
+            }
+            throw new Error('Request failed');
+        }, networkError => console.log(networkError.message)
+        ).then(jsonResponse =>{
+            console.log(jsonResponse);
+            form.reset();
+            let message = document.createTextNode("¡Gracias por tu mensaje!");
+            while(formSendMessage.firstChild){
+                formSendMessage.removeChild(formSendMessage.firstChild);
+            }
+            formSendMessage.appendChild(message);
+        });
+    }
 });
