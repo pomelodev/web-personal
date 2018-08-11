@@ -13,6 +13,12 @@ let sectionContacto = document.getElementById("section-contacto");
 let sectionServicios = document.getElementById('section-servicios');
 let sectionPortfolio = document.getElementById('section-portfolio');
 let sectionNosotros = document.getElementById('section-nosotros');
+let formButton = document.getElementById('form-button');
+let form = document.getElementById('form');
+let formNombre = document.getElementById('form-nombre');
+let formEmail = document.getElementById('form-email');
+let formConsulta = document.getElementById('form-consulta');
+let formSendMessage = document.getElementById('form-send-message');
 //------Posiciones------//
 
 let posSectionPortada = sectionPortada.getBoundingClientRect().bottom;
@@ -96,4 +102,30 @@ menuButton.addEventListener("click", ()=>{
         portadaContenido.classList.remove("portada-contenido-nav-show");
         navMobileShow = false;
     }
+});
+
+/*--------FORM-------*/
+formButton.addEventListener("click", (event)=>{
+    event.preventDefault();
+    fetch('http://localhost:3000/contact', {
+        method:'POST',
+        body: JSON.stringify({
+            "nombre":formNombre.value,
+            "email": formEmail.value,
+            "consulta":formConsulta.value 
+        }),
+        headers:{
+            'Content-Type': 'application/json'
+        }
+    }).then(response =>{
+        if(response.ok){
+            return response.json();
+        }
+        throw new Error('Request failed');
+    }, networkError => console.log(networkError.message)
+    ).then(jsonResponse =>{
+        console.log(jsonResponse);
+    });
+    form.reset();
+    formSendMessage.classList.add('form-send-message-visible');
 });

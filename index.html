@@ -144,11 +144,14 @@
             <h1 class="contacto-title">¡Envianos tu<br> consulta!</h1>
             <p class="contacto-text">Compartinos tus ideas o las dudas que tengas y nos comunicamos con vos a la brevedad.</p>
         </div>
-        <form action="/contact" method="post">
-            <input class="form-element" type="text" name="nombre" placeholder="Tu nombre" required>
-            <input class="form-element" type="email" name="email" placeholder="Tu email" required>
-            <textarea class="form-element text-area" name="consulta" id="" placeholder="Tu consulta" required></textarea>
-            <input class="form-button" type="submit" value="ENVIAR">
+        <form id="form">
+            <input class="form-element"  id="form-nombre" type="text" name="nombre" placeholder="Tu nombre" required>
+            <input class="form-element" id="form-email"  type="email" name="email" placeholder="Tu email" required>
+            <textarea class="form-element text-area"  id="form-consulta" name="consulta" id="" placeholder="Tu consulta" required></textarea>
+            <div class="form-send-section">
+                <p class="form-send-message" id="form-send-message">¡Gracias por tu mensaje!</p>
+                <button class="form-button" id="form-button">ENVIAR</button>
+            </div>
         </form>
     </section>
     <footer>
