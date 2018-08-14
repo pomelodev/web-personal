@@ -13,6 +13,9 @@ let sectionContacto = document.getElementById("section-contacto");
 let sectionServicios = document.getElementById('section-servicios');
 let sectionPortfolio = document.getElementById('section-portfolio');
 let sectionNosotros = document.getElementById('section-nosotros');
+let formButton = document.getElementById('form-button');
+let from = document.getElementById('form');
+
 //------Posiciones------//
 
 let posSectionPortada = sectionPortada.getBoundingClientRect().bottom;
@@ -88,7 +91,7 @@ menuButton.addEventListener("click", ()=>{
         portadaContenido.classList.add("portada-contenido-nav-show");
         navMobileShow = true;
     } else{
-        for(element of navElementsArray){
+        for(let element of navElementsArray){
             element.classList.remove("nav-element-nav-show");
         }
         header.classList.remove("header-nav-show");
@@ -97,3 +100,29 @@ menuButton.addEventListener("click", ()=>{
         navMobileShow = false;
     }
 });
+
+//------Form button-------//
+formButton.addEventListener("click", ()=>{
+    fetch('http://localhost:3000/contact', {
+        method: 'POST',
+        body: JSON.stringify({
+            nombre: form.elements["nombre"].value,
+            email: form.elements["email"].value,
+            consulta: form.elements["consulta"].value
+        }),
+        headers:{
+            'Content-Type': 'application/json'
+        }
+    }).then(response=>{
+            if(response.ok){
+                return response.json;
+            }
+            throw new Error('Request failed');
+        }, newtworkError => console.log(networkError.message)
+    ).then(jsonResponse =>{
+        console.log(jsonResponse);
+    });
+    alert("Enviado");
+});
+
+

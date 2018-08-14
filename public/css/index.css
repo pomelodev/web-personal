@@ -329,6 +329,10 @@ form{
     padding: 2% 4%;
 }
 
+.form-button:hover{
+    cursor: pointer;
+}
+
 
 
 /*_______________FOOTER__________________*/
