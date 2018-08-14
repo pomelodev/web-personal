@@ -14,8 +14,11 @@ let sectionServicios = document.getElementById('section-servicios');
 let sectionPortfolio = document.getElementById('section-portfolio');
 let sectionNosotros = document.getElementById('section-nosotros');
 let formButton = document.getElementById('form-button');
-let from = document.getElementById('form');
-
+let form = document.getElementById('form');
+let formNombre = document.getElementById('form-nombre');
+let formEmail = document.getElementById('form-email');
+let formConsulta = document.getElementById('form-consulta');
+let formSendMessage = document.getElementById('form-send-message');
 //------Posiciones------//
 
 let posSectionPortada = sectionPortada.getBoundingClientRect().bottom;
@@ -101,28 +104,40 @@ menuButton.addEventListener("click", ()=>{
     }
 });
 
-//------Form button-------//
-formButton.addEventListener("click", ()=>{
-    fetch('http://localhost:3000/contact', {
-        method: 'POST',
-        body: JSON.stringify({
-            nombre: form.elements["nombre"].value,
-            email: form.elements["email"].value,
-            consulta: form.elements["consulta"].value
-        }),
-        headers:{
-            'Content-Type': 'application/json'
+/*--------FORM-------*/
+formButton.addEventListener("click", (event)=>{
+    event.preventDefault();
+    if(formNombre.value == "" | formEmail.value == "" | formConsulta.value == ""){
+        let message = document.createTextNode("Completá todos los campos");
+        while(formSendMessage.firstChild){
+            formSendMessage.removeChild(formSendMessage.firstChild);
         }
-    }).then(response=>{
+        formSendMessage.appendChild(message);
+    }else{
+        fetch('http://localhost:3000/contact', {
+            method:'POST',
+            body: JSON.stringify({
+                "nombre":formNombre.value,
+                "email": formEmail.value,
+                "consulta":formConsulta.value 
+            }),
+            headers:{
+                'Content-Type': 'application/json'
+            }
+        }).then(response =>{
             if(response.ok){
-                return response.json;
+                return response.json();
             }
             throw new Error('Request failed');
-        }, newtworkError => console.log(networkError.message)
-    ).then(jsonResponse =>{
-        console.log(jsonResponse);
-    });
-    alert("Enviado");
+        }, networkError => console.log(networkError.message)
+        ).then(jsonResponse =>{
+            console.log(jsonResponse);
+            form.reset();
+            let message = document.createTextNode("¡Gracias por tu mensaje!");
+            while(formSendMessage.firstChild){
+                formSendMessage.removeChild(formSendMessage.firstChild);
+            }
+            formSendMessage.appendChild(message);
+        });
+    }
 });
-
-
