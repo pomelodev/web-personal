@@ -19,6 +19,18 @@ let formNombre = document.getElementById('form-nombre');
 let formEmail = document.getElementById('form-email');
 let formConsulta = document.getElementById('form-consulta');
 let formSendMessage = document.getElementById('form-send-message');
+let serviciosTitle = document.getElementById('servicios-title');
+let portfolioTitle = document.getElementById('portfolio-title');
+let nosotrosTitle = document.getElementById('nosotros-title');
+let contactoTitle = document.getElementById('contacto-title');
+let portfolioContent = document.getElementById('portfolio-content');
+let portfolioImg1 = document.getElementById('portfolio-img-1');
+let portfolioImg2 = document.getElementById('portfolio-img-2');
+let portfolioImg3 = document.getElementById('portfolio-img-3');
+let portfolioImg4 = document.getElementById('portfolio-img-4');
+let portfolioImg5 = document.getElementById('portfolio-img-5');
+let portfolioImg6 = document.getElementById('portfolio-img-6');
+
 //------Posiciones------//
 
 let posSectionPortada = sectionPortada.getBoundingClientRect().bottom;
@@ -77,6 +89,39 @@ window.onscroll = ()=>{
     }
     if(window.pageYOffset < posSectionContacto-10 && window.pageYOffset > posSectionPortada){
         headerLogo.classList.add("header-logo-fixed");
+    }
+    if(window.pageYOffset > posSectionServicios - window.innerHeight * 0.50) {
+        serviciosTitle.classList.add('title-visible');
+    }
+    if(window.pageYOffset > posSectionPortfolio - window.innerHeight * 0.50) {
+        portfolioTitle.classList.add('title-visible');
+    }
+    if(window.pageYOffset > posSectionNosotros - window.innerHeight * 0.50) {
+        nosotrosTitle.classList.add('title-visible');
+    }
+    if(window.pageYOffset > posSectionContacto - window.innerHeight * 0.50) {
+        contactoTitle.classList.add('title-visible');
+    }
+    if(window.pageYOffset > posSectionPortfolio - window.innerHeight * 0.25) {
+        portfolioImg1.classList.add('portfolio-img-visible');
+        setTimeout(()=>{
+            portfolioImg2.classList.add('portfolio-img-visible');
+        }, 500);
+        setTimeout(()=>{
+            portfolioImg3.classList.add('portfolio-img-visible');
+        }, 700);
+        setTimeout(()=>{
+            portfolioImg4.classList.add('portfolio-img-visible');
+        }, 900);
+        setTimeout(()=>{
+            portfolioImg5.classList.add('portfolio-img-visible');
+        }, 1100);
+        setTimeout(()=>{
+            portfolioImg6.classList.add('portfolio-img-visible');
+        }, 1300);
+
+        
+        
     }
 
 };
