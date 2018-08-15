@@ -94,7 +94,7 @@ menuButton.addEventListener("click", ()=>{
         portadaContenido.classList.add("portada-contenido-nav-show");
         navMobileShow = true;
     } else{
-        for(element of navElementsArray){
+        for(let element of navElementsArray){
             element.classList.remove("nav-element-nav-show");
         }
         header.classList.remove("header-nav-show");
