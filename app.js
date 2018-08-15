@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const helmet = require('helmet');
 let bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 let sendMail = require("./mail");
 
@@ -13,13 +13,13 @@ app.use(express.static(__dirname + '/public'));
 
 
 
-app.get('/', (req,res)=>{
+app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
-app.post('/contact', (req,res)=>{
+app.post('/contact', (req, res) => {
     sendMail(req.body.nombre, req.body.email, req.body.consulta);
-    res.json({"transaction":"done"});
+    res.json({ "transaction": "done" });
 });
 
 

@@ -1,129 +1,118 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
-section{
+section {
     padding: 0 15%;
     width: 70%;
 }
 
-h1{
+h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 3vw;
-    color: rgb(28,30,55);
-
+    color: rgb(28, 30, 55);
 }
 
-h2 {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.7em;
-    font-weight: bolder;
-}
-
-p{
+p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2vw;
 }
 
-
-
 /*________________HEADER_________________*/
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    background-color: rgba(28,30,55,0.9);
+    background-color: rgba(28, 30, 55, 0.9);
     padding: 0 3%;
 }
 
-.header-logo{
+.header-logo {
     width: 12%;
     visibility: hidden;
 }
 
-.header-fixed{
+.header-fixed {
     position: fixed;
-    background-color: rgb(28,30,55);
+    background-color: rgb(28, 30, 55);
 }
 
-.header-logo-fixed{
+.header-logo-fixed {
     visibility: visible;
 }
 
-nav{
+nav {
     width: 25%;
 }
-.nav-elements{
+
+.nav-elements {
     list-style-type: none;
     display: flex;
     align-items: center;
     font-size: 1.1vw;
 }
 
-.nav-element{
+.nav-element {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
     color: white;
     height: 3vh;
 }
 
-.nav-element:hover{
+.nav-element:hover {
     cursor: pointer;
 }
 
-.nav-contacto{
+.nav-contacto {
     background-color: white;
     padding: 3.5vh 1%;
-    color: rgb(28,30,55);
+    color: rgb(28, 30, 55);
 }
 
-.header-mobile{
+.header-mobile {
     display: none;
 }
 
-
 /*_______________PORTADA_________________*/
 
-.section-portada{
+.section-portada {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 0;
     width: 100%;
     height: 90vh;
-    background-color: rgba(28,30,55,0.9);
+    background-color: rgba(28, 30, 55, 0.9);
 }
 
-.fondo-pomelos{
-    background-image : url(/img/fondo-pomelos.jpg);
+.fondo-pomelos {
+    background-image: url(/img/fondo-pomelos.jpg);
 }
-.portada-contenido{
-     padding: 30vh 15%;
-     width: 70%;
-     height: 30vh;
- }
 
-.portada-logo{
+.portada-contenido {
+    padding: 30vh 15%;
+    width: 70%;
+    height: 30vh;
+}
+
+.portada-logo {
     width: 30%;
 }
 
-.portada-texto{
+.portada-texto {
     color: white;
     width: 30%;
     font-size: 2.5vw;
     font-family: 'Open Sans', sans-serif;
 }
 
-.citrico{
+.citrico {
     background-color: #ff5c5c;
     padding: 0 1%;
 }
-
-
 
 /*____________SERVICIOS___________ */
 
@@ -187,13 +176,12 @@ nav{
 
 /*______________PORTFOLIO_________________*/
 
-.section-portfolio{
+.section-portfolio {
     min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 
 .portfolio-content {
     display: grid;
@@ -204,72 +192,71 @@ nav{
 }
 
 .portfolio-content-img {
-    width: 100%;    
+    width: 100%;
 }
 
-.portfolio-content-img:hover{
+.portfolio-content-img:hover {
     cursor: pointer;
     transform: scale(1.03);
 }
 
-
-
 /*_____________NOSOTROS__________________*/
 
-.section-nosotros{
+.section-nosotros {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 15%;
 }
-.nosotros-title{
+
+.nosotros-title {
     color: #1C1E37;
     font-size: 3vw;
 }
 
-.nosotros-contenido{
+.nosotros-contenido {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 3%;
 }
 
-.nosotros-izquierda{
+.nosotros-izquierda {
     width: 60%;
 }
 
-.nosotros-texto{
+.nosotros-texto {
     font-family: "Opens Sans", sans-serif;
     color: #1C1E37;
 }
 
-.nosotros-iconos{
+.nosotros-iconos {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 5%;
 }
 
-.nosotros-icono{
+.nosotros-icono {
     width: 12%;
 }
 
-.icono-express{
-    color: rgb(28,30,55);
+.icono-express {
+    color: rgb(28, 30, 55);
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.7vw;
 }
 
-.nosotros-derecha{
+.nosotros-derecha {
     background-image: url(/img/mendoza.jpg);
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
 }
 
-.mapa-violeta{
-    background-color: rgba(28,30,55,0.6);
+.mapa-violeta {
+    background-color: rgba(28, 30, 55, 0.6);
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
@@ -277,35 +264,35 @@ nav{
 
 /*_____________CONTACTO________________*/
 
-.section-contacto{
+.section-contacto {
     height: 90vh;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1C1E37;
 }
 
-.contacto-izquierda{
+.contacto-izquierda {
     width: 40%;
     height: 50vh;
 }
 
-.contacto-title{
+.contacto-title {
     color: white;
     font-size: 3vw;
     margin-bottom: 5%;
 }
 
-.contacto-text{
+.contacto-text {
     color: white;
 }
 
-form{
+form {
     width: 30vw;
     height: 50vh;
 }
 
-.form-element{
+.form-element {
     display: block;
     width: 28vw;
     height: 10%;
@@ -316,11 +303,11 @@ form{
     color: white;
 }
 
-.text-area{
+.text-area {
     height: 30%;
 }
 
-.form-button{
+.form-button {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     color: #1C1E37;
@@ -329,31 +316,27 @@ form{
     background-color: white;
 }
 
-.form-send-section{
+.form-send-section {
     display: flex;
     justify-content: space-between;
-    width:100%;
+    width: 100%;
 }
 
-.form-send-message{
-    color:white; 
+.form-send-message {
+    color: white;
     width: 60%;
     font-weight: 800;
 }
 
-
-.form-button:hover{
+.form-button:hover {
     cursor: pointer;
     visibility: visible;
 }
 
-
-
 /*_______________FOOTER__________________*/
 
-footer{
+.footer {
     height: 10vh;
-    width: 94%;
     background-color: #FF5C5C;
     display: flex;
     align-items: center;
@@ -362,67 +345,71 @@ footer{
     padding: 0 3%;
 }
 
-.direccion{
+.credits {
+    padding-top: 2%;
+    text-align: center;
+    background-color: #FF5C5C;
+    color: white;
+    font-size: 0.8vw;
+}
+
+.credits a {
+    color: white;
+    text-decoration: none;
+}
+
+.direccion {
     width: 20%;
 }
 
-.direccion-element{
+.direccion-element {
     display: flex;
     align-items: center;
     font-family: "Open Sans", sans-serif;
 }
 
-.direccion-logo{
+.direccion-logo {
     width: 8%;
     margin-right: 5%;
 }
 
-.redes{
-    text-align: center;
+.redes {
     width: 15%;
 }
 
-.redes-logo{
+.redes-logo {
     width: 15%;
     margin: 0 2%;
 }
 
-.logo-footer{
+.logo-footer {
     width: 12%;
-    padding: 0 4%;
 }
 
-
 /*_______________________________________*/
+
 /*__________RESPONSIVE MAX 768___________*/
+
 /*_______________________________________*/
 
-@media (max-width: 768px){
-    h1{
+@media (max-width: 768px) {
+    h1 {
         font-size: 6vw;
     }
-   
-
-    p{
+    p {
         font-size: 2.2vw;
     }
-
     /*HEADER 768*/
-    .header-logo{
-        display:none;
+    .header-logo {
+        display: none;
     }
-
-
-    nav{
+    nav {
         width: 100%;
     }
-
-    header{
+    header {
         padding: 0 0;
     }
-
-
-    .header-mobile{
+    .header-mobile {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -430,38 +417,33 @@ footer{
         height: 10vh;
         padding: 0 3%;
     }
-
-    .header-mobile-logo{
+    .header-mobile-logo {
         width: 25%;
         visibility: hidden;
     }
-
-    .nav-elements{
+    .nav-elements {
         justify-content: center;
     }
     /*nav*/
-    .nav-element{
+    .nav-element {
         display: none;
     }
-
-    .header-nav-show{
+    .header-nav-show {
         height: 50vh;
         position: fixed;
     }
-    .nav-elements{
+    .nav-elements {
         flex-direction: column;
         font-size: 3vw;
     }
-
-    .nav{
+    .nav {
         width: 100%;
     }
-
-    .nav-element-nav-show{
+    .nav-element-nav-show {
         font-size: 3vw;
         display: block;
         height: 9.8vh;
-        background-color: rgba(28,30,55,0.9);
+        background-color: rgba(28, 30, 55, 0.9);
         border: 0.1vh solid rgb(37, 38, 61);
         width: 100%;
         margin-left: 0;
@@ -470,55 +452,44 @@ footer{
         align-items: center;
         justify-content: center;
     }
-
-    .nav-contacto-nav-show{
+    .nav-contacto-nav-show {
         padding: 0 0;
     }
-
     /*---*/
-    .menu-button-part{
+    .menu-button-part {
         width: 35px;
         height: 1vh;
         margin-bottom: 3px;
         background-color: #ff5c5c;
     }
-
     /*PORTADA 768*/
-
-    .portada-contenido{
+    .portada-contenido {
         padding: 30vh 15%;
         width: 70%;
         height: 30vh;
     }
-
-    .portada-contenido-nav-show{
+    .portada-contenido-nav-show {
         padding: 40vh 15% 30vh 15%;
     }
-   
-   .portada-logo{
-       width: 60%;
-   }
-   
-   .portada-texto{
-       color: white;
-       width: 60%;
-       font-size: 5vw;
-   }
+    .portada-logo {
+        width: 60%;
+    }
+    .portada-texto {
+        color: white;
+        width: 60%;
+        font-size: 5vw;
+    }
     /*SERVICIOS 768*/
-
     .services-content, .portfolio-content {
         margin-top: 10%;
     }
-
-    .section-services{
+    .section-services {
         /* height: auto; */
         padding-top: 5vh;
     }
-
-    .services-title{
+    .services-title {
         margin-top: 15%;
     }
-
     .desktop {
         display: none;
     }
@@ -532,8 +503,7 @@ footer{
     .tablet-mobile .circles {
         flex-flow: column;
     }
-
-    .circle{
+    .circle {
         height: 50vw;
         width: 50vw;
     }
@@ -546,12 +516,10 @@ footer{
     .circle p {
         margin: 0 10%;
     }
-
     /*PORTFOLIO 768*/
-    .section-portfolio{
+    .section-portfolio {
         min-height: 90vh;
     }
-   
     .portfolio-content {
         grid-template-columns: 1fr 1fr;
         width: 100%;
@@ -560,129 +528,104 @@ footer{
     .portfolio-content .img-display {
         display: none;
     }
-
-   /*NOSOTROS 768*/
-
-   .section-nosotros{
-       min-height: 70vh;
-   }
-
-    .nosotros-title{
-       font-size: 6vw;
-   }
-   .nosotros-derecha{
-       display:none;
-   }
-   .nosotros-izquierda{
-       width: 100%;
-   }
-
-   /*CONTACTO 768*/
-
-   .section-contacto{
-       flex-direction: column;
-       justify-content: center;
-       align-items: flex-start;
-   }
-
-   .contacto-izquierda{
-       width: 100%;
-       height: auto;
-       margin-bottom: 10%;
-   }
-
-   .contacto-title{
-       font-size: 6vw;
-   }
-
-   form{
-       width: 98%;
-       height: auto;
-   }
-
-   .form-element{
-       width: 100%;
-   }
-
-   /*FOOTER 768*/
-   .logo-footer{
-       display: none;
-   }
-
-   .direccion-logo{
-       display: none;
-   }
-
-   .redes{
-       width: 40%;
-       text-align: right;
-   }
-   .redes-logo{
-       width: 15%;
-   }
-
-
+    /*NOSOTROS 768*/
+    .section-nosotros {
+        min-height: 70vh;
+    }
+    .nosotros-title {
+        font-size: 6vw;
+    }
+    .nosotros-derecha {
+        display: none;
+    }
+    .nosotros-izquierda {
+        width: 100%;
+    }
+    /*CONTACTO 768*/
+    .section-contacto {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .contacto-izquierda {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .contacto-title {
+        font-size: 6vw;
+    }
+    form {
+        width: 98%;
+        height: auto;
+    }
+    .form-element {
+        width: 100%;
+    }
+    /*FOOTER 768*/
+    .logo-footer {
+        display: none;
+    }
+    .direccion-logo {
+        display: none;
+    }
+    .redes {
+        width: 40%;
+        text-align: right;
+    }
+    .redes-logo {
+        width: 15%;
+    }
 }
 
 /*_______________________________________*/
+
 /*__________RESPONSIVE MAX 480___________*/
+
 /*_______________________________________*/
 
-@media (max-width: 480px){
-    p{
+@media (max-width: 480px) {
+    p {
         font-size: 4.2vw;
     }
-    h1{
+    h1 {
         font-size: 9vw;
     }
-
     /*HEADER 480*/
-    .nav-element-nav-show{
+    .nav-element-nav-show {
         font-size: 5vw;
     }
-
-    .header-mobile-logo{
+    .header-mobile-logo {
         width: 40%;
         visibility: hidden;
     }
-
     /*SERVICIOS 480*/
-
-    .circle{
+    .circle {
         height: 65vw;
         width: 65vw;
     }
-
     /*NOSOTROS 480*/
-
-    .nosotros-title{
+    .nosotros-title {
         font-size: 9vw;
     }
-
-    .nosotros-contenido{
+    .nosotros-contenido {
         margin-top: 10%;
     }
-
-    .nosotros-iconos{
+    .nosotros-iconos {
         margin-top: 10%;
     }
-
     /*CONTACTO 468*/
-
-
-    .contacto-izquierda{
+    .contacto-izquierda {
         height: auto;
     }
-    .contacto-title{
+    .contacto-title {
         font-size: 9vw;
-    }    
-
+    }
     /*FOOTER 468*/
-    .redes{
+    .redes {
         width: 40%;
     }
-    .redes-logo{
+    .redes-logo {
         width: 25%;
     }
-
 }
