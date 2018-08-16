@@ -583,11 +583,12 @@ form {
     }
     .tablet-mobile {
         display: flex;
+        margin-left: 15%;
     }
     .tablet-mobile .circles {
         flex-flow: column;
-        justify-content: space-between;
-        align-items: space-between;
+        justify-content: center;
+        align-items: center;
     }
     .circle {
         height: 50vw;
@@ -687,6 +688,10 @@ form {
     .circle {
         height: 65vw;
         width: 65vw;
+    }
+
+    .tablet-mobile{
+        margin-left: 0;
     }
     /*NOSOTROS 480*/
     .nosotros-title {
