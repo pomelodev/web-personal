@@ -38,7 +38,6 @@ let posSectionContacto = sectionContacto.getBoundingClientRect().top;
 let posSectionServicios = sectionServicios.getBoundingClientRect().top;
 let posSectionPortfolio = sectionPortfolio.getBoundingClientRect().top;
 let posSectionNosotros = sectionNosotros.getBoundingClientRect().top;
-
 //---------Links Internos-----//
 let addLink = function(link, posicion){
     link.addEventListener("click", ()=>{
@@ -186,3 +185,5 @@ formButton.addEventListener("click", (event)=>{
         });
     }
 });
+
+

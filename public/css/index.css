@@ -415,11 +415,12 @@ form {
 }
 
 .credits {
-    padding-top: 2%;
-    text-align: center;
+    padding: 0.5% 3%;
+    text-align: left;
     background-color: #FF5C5C;
     color: white;
-    font-size: 0.8vw;
+    font-size: 0.8vw;    
+    font-family: "Open Sans", sans-serif;
 }
 
 .credits a {
