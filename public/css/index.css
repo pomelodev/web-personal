@@ -36,6 +36,7 @@ header {
     height: 10vh;
     background-color: rgba(28, 30, 55, 0.9);
     padding: 0 3%;
+    z-index: 1;
 }
 
 .header-logo {
@@ -76,7 +77,7 @@ nav {
 
 .nav-contacto {
     background-color: white;
-    padding: 3.5vh 1%;
+    padding: 3.5vh 0.5vw;
     color: rgb(28, 30, 55);
 }
 
@@ -156,8 +157,11 @@ nav {
 }
 
 .services-title {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
+    opacity: 0;
 }
+
+
 
 .tablet-mobile {
     display: none;
@@ -225,6 +229,11 @@ nav {
     justify-content: center;
 }
 
+.portfolio-title{
+    opacity:0;
+}
+
+
 .portfolio-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -235,6 +244,22 @@ nav {
 
 .portfolio-content-img {
     width: 100%;
+    opacity: 0;
+}
+
+.portfolio-img-visible{
+    animation-name: portfolio-img-visible;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes portfolio-img-visible{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .portfolio-content-img:hover {
@@ -254,6 +279,7 @@ nav {
 .nosotros-title {
     color: #1C1E37;
     font-size: 3vw;
+    opacity: 0;
 }
 
 .nosotros-contenido {
@@ -323,6 +349,7 @@ nav {
     color: white;
     font-size: 3vw;
     margin-bottom: 5%;
+    opacity: 0;
 }
 
 .contacto-text {
@@ -354,7 +381,7 @@ form {
     font-weight: 400;
     color: #1C1E37;
     border: none;
-    padding: 2% 4%;
+    padding: 2% 1vw;
     background-color: white;
 }
 
@@ -426,6 +453,23 @@ form {
 
 .logo-footer {
     width: 12%;
+}
+
+/*____________ANIMACIONES_________________*/
+
+.title-visible{
+    animation-name: title-visible;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes title-visible{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /*_______________________________________*/
