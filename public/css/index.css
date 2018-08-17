@@ -25,6 +25,7 @@ h2 {
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2vw;
+    color: #1C1E37;
 }
 
 /*________________HEADER_________________*/
@@ -152,16 +153,10 @@ nav {
     margin: 10% 0;
 }
 
-.services-content, .portfolio-content {
-    margin-top: 5%;
-}
-
 .services-title {
-    margin-bottom: 8%;
+    margin-bottom: 3%;
     opacity: 0;
 }
-
-
 
 .tablet-mobile {
     display: none;
@@ -229,10 +224,10 @@ nav {
     justify-content: center;
 }
 
-.portfolio-title{
-    opacity:0;
+.portfolio-title {
+    opacity: 0;
+    margin-bottom: 3%;
 }
-
 
 .portfolio-content {
     display: grid;
@@ -247,17 +242,17 @@ nav {
     opacity: 0;
 }
 
-.portfolio-img-visible{
+.portfolio-img-visible {
     animation-name: portfolio-img-visible;
     animation-fill-mode: forwards;
     animation-duration: 1s;
 }
 
-@keyframes portfolio-img-visible{
-    0%{
+@keyframes portfolio-img-visible {
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
@@ -280,33 +275,36 @@ nav {
     color: #1C1E37;
     font-size: 3vw;
     opacity: 0;
+    margin-bottom: 3%;
 }
 
 .nosotros-contenido {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-top: 3%;
 }
 
 .nosotros-izquierda {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
     width: 60%;
 }
 
-.nosotros-texto {
-    font-family: "Opens Sans", sans-serif;
-    color: #1C1E37;
+.nosotros-derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
 }
-
 .nosotros-iconos {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5%;
+    margin-right: 5%;
 }
 
 .nosotros-icono {
-    width: 12%;
+    width: 10%;
 }
 
 .icono-express {
@@ -316,14 +314,14 @@ nav {
     font-size: 1.7vw;
 }
 
-.nosotros-derecha {
+.map {
     background-image: url(/img/mendoza.jpg);
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
 }
 
-.mapa-violeta {
+.violet-map {
     background-color: rgba(28, 30, 55, 0.6);
     width: 20vw;
     height: 20vw;
@@ -348,7 +346,7 @@ nav {
 .contacto-title {
     color: white;
     font-size: 3vw;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     opacity: 0;
 }
 
@@ -457,17 +455,17 @@ form {
 
 /*____________ANIMACIONES_________________*/
 
-.title-visible{
+.title-visible {
     animation-name: title-visible;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
-@keyframes title-visible{
-    0%{
+@keyframes title-visible {
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
@@ -622,6 +620,9 @@ form {
     .nosotros-izquierda {
         width: 100%;
     }
+    .nosotros-iconos {
+        margin-top: 5%;
+    }
     /*CONTACTO 768*/
     .section-contacto {
         flex-direction: column;
@@ -693,7 +694,7 @@ form {
         margin-top: 10%;
     }
     .nosotros-iconos {
-        margin-top: 10%;
+        margin-top: 5%;
     }
     /*CONTACTO 468*/
     .contacto-izquierda {
