@@ -35,7 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    background-color: rgba(28, 30, 55, 0.9);
+    background-color: rgba(28, 30, 55, 0.95);
     padding: 0 3%;
     z-index: 1;
 }
@@ -94,7 +94,7 @@ nav {
     padding: 0 0;
     width: 100%;
     height: 90vh;
-    background-color: rgba(28, 30, 55, 0.9);
+    background-color: rgba(28, 30, 55, 0.95);
 }
 
 .fondo-pomelos {
@@ -224,17 +224,17 @@ nav {
     justify-content: center;
 }
 
-.portfolio-title {
-    opacity: 0;
-    margin-bottom: 3%;
+.portfolio-title{
+    opacity:0;
+    margin-top: 2%;
 }
 
 .portfolio-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-    width: 90%;
-    padding: 0 5%;
+    width: 100%;
+    margin-top: 2%;
 }
 
 .portfolio-content-img {
@@ -368,6 +368,7 @@ form {
     background-color: #373951;
     border: none;
     color: white;
+    font-size: 1vw;
 }
 
 .text-area {
@@ -377,6 +378,7 @@ form {
 .form-button {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
+    font-size: 1vw;
     color: #1C1E37;
     border: none;
     padding: 2% 1vw;
@@ -413,11 +415,12 @@ form {
 }
 
 .credits {
-    padding-top: 2%;
-    text-align: center;
+    padding: 0.5% 3%;
+    text-align: left;
     background-color: #FF5C5C;
     color: white;
-    font-size: 0.8vw;
+    font-size: 0.8vw;    
+    font-family: "Open Sans", sans-serif;
 }
 
 .credits a {
@@ -578,16 +581,23 @@ form {
     }
     .tablet-mobile {
         display: flex;
+        margin-left: 15%;
     }
     .tablet-mobile .circles {
         flex-flow: column;
-        justify-content: space-between;
-        align-items: space-between;
+        justify-content: center;
+        align-items: center;
     }
     .circle {
         height: 50vw;
         width: 50vw;
         margin: 10%;
+    }
+
+    .circle h2{
+        color: black;
+        margin: 5% 0;
+        font-size: 4vw;
     }
     .circle img {
         width: 20%;
@@ -685,6 +695,14 @@ form {
     .circle {
         height: 65vw;
         width: 65vw;
+    }
+
+    .circle h2{
+        font-size: 6vw;
+    }
+
+    .tablet-mobile{
+        margin-left: 0;
     }
     /*NOSOTROS 480*/
     .nosotros-title {
