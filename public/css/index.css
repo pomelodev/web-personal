@@ -421,7 +421,7 @@ form {
 
 .credits {
     padding: 0.5% 3%;
-    text-align: left;
+    text-align: center;
     background-color: #FF5C5C;
     color: white;
     font-size: 0.8vw;    
@@ -551,7 +551,7 @@ form {
     .nav-contacto-nav-show {
         padding: 0 0;
     }
-    /*---*/
+
     .menu-button-part {
         width: 35px;
         height: 1vh;
