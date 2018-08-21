@@ -132,10 +132,15 @@ nav {
     flex-flow: column;
     text-align: center;
     margin: 10% 0;
+    height: 60vh;
+}
+
+.intro-text{
+    font-size: 2vw;
 }
 
 .section-intro button {
-    width: 30%;
+    width: 20%;
     padding: 1%;
     font-size: 1.3vw;
     font-weight: bold;
@@ -436,6 +441,10 @@ form {
     display: flex;
     align-items: center;
     font-family: "Open Sans", sans-serif;
+}
+
+.direccion-element p{
+    color: white;
 }
 
 .direccion-logo {
