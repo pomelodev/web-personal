@@ -456,6 +456,10 @@ form {
     width: 12%;
 }
 
+.footer .direccion .direccion-element p {
+    color: #ffffff;
+}
+
 /*____________ANIMACIONES_________________*/
 
 .title-visible {
