@@ -132,10 +132,15 @@ nav {
     flex-flow: column;
     text-align: center;
     margin: 10% 0;
+    height: 60vh;
+}
+
+.intro-text{
+    font-size: 2vw;
 }
 
 .section-intro button {
-    width: 30%;
+    width: 20%;
     padding: 1%;
     font-size: 1.3vw;
     font-weight: bold;
@@ -416,7 +421,7 @@ form {
 
 .credits {
     padding: 0.5% 3%;
-    text-align: left;
+    text-align: center;
     background-color: #FF5C5C;
     color: white;
     font-size: 0.8vw;    
@@ -436,6 +441,10 @@ form {
     display: flex;
     align-items: center;
     font-family: "Open Sans", sans-serif;
+}
+
+.direccion-element p{
+    color: white;
 }
 
 .direccion-logo {
@@ -546,7 +555,7 @@ form {
     .nav-contacto-nav-show {
         padding: 0 0;
     }
-    /*---*/
+
     .menu-button-part {
         width: 35px;
         height: 1vh;
