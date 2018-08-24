@@ -386,6 +386,7 @@ form {
     height: 30%;
 }
 
+
 .form-button {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -678,6 +679,12 @@ form {
     }
     .form-element {
         width: 100%;
+        font-size: 2.2vw;
+    }
+    .form-button{
+        font-size: 2.2vw;
+        margin: 0;
+        /* margin-top: 5%; */
     }
     /*FOOTER 768*/
     .logo-footer {
@@ -757,6 +764,12 @@ form {
     }
     .contacto-title {
         font-size: 9vw;
+    }
+    .form-element {
+        font-size: 4.2vw;
+    }
+    .form-button{
+        font-size: 3.2vw;
     }
     /*FOOTER 468*/
     .redes {
