@@ -693,6 +693,9 @@ form {
     .redes-logo {
         width: 15%;
     }
+    .credits{
+        font-size: 1.5vw;
+    }
 }
 
 /*_______________________________________*/
@@ -761,5 +764,8 @@ form {
     }
     .redes-logo {
         width: 25%;
+    }
+    .credits{
+        font-size: 2.0vw;
     }
 }
