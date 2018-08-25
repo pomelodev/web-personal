@@ -30,6 +30,7 @@ let portfolioImg3 = document.getElementById('portfolio-img-3');
 let portfolioImg4 = document.getElementById('portfolio-img-4');
 let portfolioImg5 = document.getElementById('portfolio-img-5');
 let portfolioImg6 = document.getElementById('portfolio-img-6');
+let introButton = document.getElementById('intro-button');
 
 //------Posiciones------//
 
@@ -39,10 +40,10 @@ let posSectionServicios = sectionServicios.getBoundingClientRect().top;
 let posSectionPortfolio = sectionPortfolio.getBoundingClientRect().top;
 let posSectionNosotros = sectionNosotros.getBoundingClientRect().top;
 //---------Links Internos-----//
-let addLink = function(link, posicion){
+let addLink = function(link, posicion, margin){
     link.addEventListener("click", ()=>{
         window.scroll({
-            top: posicion - 80,
+            top: posicion - margin,
             left: 0,
             behavior: 'smooth'
         });
@@ -56,10 +57,11 @@ let addLink = function(link, posicion){
     });
 };
 
-addLink(navServicios, posSectionServicios);
-addLink(navPortfolio, posSectionPortfolio);
-addLink(navNosotros, posSectionNosotros);
-addLink(navContacto, posSectionContacto);
+addLink(navServicios, posSectionServicios, 80);
+addLink(navPortfolio, posSectionPortfolio, 80);
+addLink(navNosotros, posSectionNosotros, 80);
+addLink(navContacto, posSectionContacto, 0);
+addLink(introButton, posSectionContacto, 0);
 
 
 
