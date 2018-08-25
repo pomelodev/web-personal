@@ -573,8 +573,9 @@ form {
         font-size: 4vw;
     }
     .section-intro button {
-        font-size: 3vw;
-        margin-top: 5%;
+        padding: 3%;
+        font-size: 2vw;
+        margin-top: 10%;
     }
     /*PORTADA 768*/
     .portada-contenido {
@@ -615,10 +616,12 @@ form {
         justify-content: center;
         align-items: center;
     }
+
     .circle {
         height: 50vw;
-        width: 50vw;
-        margin: 3%;
+        width: 100%;
+        margin: 3% 0;
+        border-radius: 0;
     }
     .circle h2 {
         color: black;
@@ -731,14 +734,14 @@ form {
         font-size: 6vw;
     }
     .section-intro button {
-        padding: 2%;
-        font-size: 5vw;
-        margin-top: 5%;
+        padding: 4%;
+        font-size: 4vw;
+        margin-top: 10%;
     }
     /*SERVICIOS 480*/
     .circle {
         height: 65vw;
-        width: 65vw;
+        width: 100%;
     }
     .circle h2 {
         font-size: 6vw;
