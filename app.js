@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/contact', (req, res) => {
-    sendMail(req.body.nombre, req.body.email, req.body.consulta);
+    sendMail(req.body.nombre, req.body.email, req.body.phone, req.body.consulta);
     res.json({ "transaction": "done" });
 });
 

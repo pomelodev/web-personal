@@ -17,6 +17,7 @@ let formButton = document.getElementById('form-button');
 let form = document.getElementById('form');
 let formNombre = document.getElementById('form-nombre');
 let formEmail = document.getElementById('form-email');
+let formPhone = document.getElementById('form-phone');
 let formConsulta = document.getElementById('form-consulta');
 let formSendMessage = document.getElementById('form-send-message');
 let serviciosTitle = document.getElementById('servicios-title');
@@ -24,13 +25,35 @@ let portfolioTitle = document.getElementById('portfolio-title');
 let nosotrosTitle = document.getElementById('nosotros-title');
 let contactoTitle = document.getElementById('contacto-title');
 let portfolioContent = document.getElementById('portfolio-content');
-let portfolioImg1 = document.getElementById('portfolio-img-1');
-let portfolioImg2 = document.getElementById('portfolio-img-2');
-let portfolioImg3 = document.getElementById('portfolio-img-3');
-let portfolioImg4 = document.getElementById('portfolio-img-4');
-let portfolioImg5 = document.getElementById('portfolio-img-5');
-let portfolioImg6 = document.getElementById('portfolio-img-6');
 let introButton = document.getElementById('intro-button');
+let containers = document.getElementsByClassName('container');
+let huarpesLinks = document.getElementsByClassName('huarpes');
+let faustoLinks = document.getElementsByClassName('fausto')
+
+//------Portfolio-------//
+if(window.innerWidth > 768){
+    for(let container of containers){
+        container.addEventListener("mouseover",()=>{
+            container.firstElementChild.classList.add('inside-visible');
+            
+        });
+        container.addEventListener("mouseout",()=>{
+            container.firstElementChild.classList.remove('inside-visible');        
+        });
+    }
+}
+if(window.innerWidth <=768){
+    for(let link of huarpesLinks){
+        link.addEventListener("click",()=>{
+            window.open("https://santiagobeloqui.github.io/huarpes/");
+        });
+    }
+    for(let link of faustoLinks){
+        link.addEventListener("click",()=>{
+            window.open("https://pomelodev.github.io/faustoweb/");
+        });
+    }
+}
 
 //------Posiciones------//
 
@@ -47,7 +70,7 @@ let addLink = function(link, posicion, margin){
             left: 0,
             behavior: 'smooth'
         });
-        for(element of navElementsArray){
+        for(let element of navElementsArray){
             element.classList.remove("nav-element-nav-show");
         }
         header.classList.remove("header-nav-show");
@@ -103,27 +126,6 @@ window.onscroll = ()=>{
     if(window.pageYOffset > posSectionContacto - window.innerHeight * 0.50) {
         contactoTitle.classList.add('title-visible');
     }
-    if(window.pageYOffset > posSectionPortfolio - window.innerHeight * 0.25) {
-        portfolioImg1.classList.add('portfolio-img-visible');
-        setTimeout(()=>{
-            portfolioImg2.classList.add('portfolio-img-visible');
-        }, 500);
-        setTimeout(()=>{
-            portfolioImg3.classList.add('portfolio-img-visible');
-        }, 700);
-        setTimeout(()=>{
-            portfolioImg4.classList.add('portfolio-img-visible');
-        }, 900);
-        setTimeout(()=>{
-            portfolioImg5.classList.add('portfolio-img-visible');
-        }, 1100);
-        setTimeout(()=>{
-            portfolioImg6.classList.add('portfolio-img-visible');
-        }, 1300);
-
-        
-        
-    }
 
 };
 
@@ -153,7 +155,7 @@ menuButton.addEventListener("click", ()=>{
 /*--------FORM-------*/
 formButton.addEventListener("click", (event)=>{
     event.preventDefault();
-    if(formNombre.value == "" | formEmail.value == "" | formConsulta.value == ""){
+    if(formNombre.value == "" | formEmail.value == "" | formPhone.value == "" |formConsulta.value == ""){
         let message = document.createTextNode("Completá todos los campos");
         while(formSendMessage.firstChild){
             formSendMessage.removeChild(formSendMessage.firstChild);
@@ -165,6 +167,7 @@ formButton.addEventListener("click", (event)=>{
             body: JSON.stringify({
                 "nombre":formNombre.value,
                 "email": formEmail.value,
+                "phone": formPhone.value,
                 "consulta":formConsulta.value 
             }),
             headers:{

@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
-let sendMail = function (from, mail, text) {
+let sendMail = function (from, mail, phone, text) {
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -14,7 +14,7 @@ let sendMail = function (from, mail, text) {
     from: from,
     to: 'pomelodev@gmail.com',
     subject: 'Mail de ' + from,
-    text: 'Nombre: ' + from + "\nEmail: " + mail + "\nConsulta: " + text
+    text: 'Nombre: ' + from + "\nEmail: " + mail + "\nTeléfono: " + phone +"\nConsulta: " + text
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
