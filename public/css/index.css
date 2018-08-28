@@ -30,12 +30,18 @@ p {
 
 /*________________HEADER_________________*/
 
+.fondo-violeta{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 30, 55, 0.95);
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    background-color: rgba(28, 30, 55, 0.95);
+    /* background-color: rgba(28, 30, 55, 0.95); */
     padding: 0 3%;
     z-index: 1;
 }
@@ -94,7 +100,7 @@ nav {
     padding: 0 0;
     width: 100%;
     height: 90vh;
-    background-color: rgba(28, 30, 55, 0.95);
+    /* background-color: rgba(28, 30, 55, 0.95); */
 }
 
 .fondo-pomelos {
@@ -699,8 +705,8 @@ form {
     }
 
     .container{
-        width:20vh;
-        height: 20vh;
+        width:35vw;
+        height: 35vw;
     }
     /*NOSOTROS 768*/
     .section-nosotros {
@@ -723,6 +729,9 @@ form {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
     .contacto-izquierda {
         width: 100%;
@@ -746,6 +755,11 @@ form {
         /* margin-top: 5%; */
     }
     /*FOOTER 768*/
+    .footer{
+        height: auto;
+        padding-top: 3%;
+        padding-bottom: 1%;
+    }
     .logo-footer {
         display: none;
     }
