@@ -28,7 +28,7 @@ let portfolioContent = document.getElementById('portfolio-content');
 let introButton = document.getElementById('intro-button');
 let containers = document.getElementsByClassName('container');
 let huarpesLinks = document.getElementsByClassName('huarpes');
-let faustoLinks = document.getElementsByClassName('fausto')
+let faustoLinks = document.getElementsByClassName('fausto');
 
 //------Portfolio-------//
 if(window.innerWidth > 768){
@@ -164,15 +164,18 @@ formButton.addEventListener("click", (event)=>{
     }else{
         fetch('http://localhost:3000/contact', {
             method:'POST',
+            headers:{
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Credentials':true,
+                'Access-Control-Allow-Methods':'POST, GET',
+                'Content-Type': 'application/json'
+            },
             body: JSON.stringify({
                 "nombre":formNombre.value,
                 "email": formEmail.value,
                 "phone": formPhone.value,
                 "consulta":formConsulta.value 
-            }),
-            headers:{
-                'Content-Type': 'application/json'
-            }
+            })
         }).then(response =>{
             if(response.ok){
                 return response.json();
@@ -191,4 +194,13 @@ formButton.addEventListener("click", (event)=>{
     }
 });
 
-
+/*----LINKS REDES-----*/
+let facebookIcon = document.getElementById("facebook-icon");
+let linkedinIcon = document.getElementById('linkedin-icon');
+let instagramIcon = document.getElementById('instagram-icon');
+facebookIcon.addEventListener('click', ()=>{
+    window.open('https://www.facebook.com/pomelodev/');
+});
+linkedinIcon.addEventListener('click', ()=>{
+    window.open('https://www.linkedin.com/company/pomelodev/');
+});

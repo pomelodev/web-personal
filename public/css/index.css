@@ -169,7 +169,7 @@ nav {
 }
 
 .services-title {
-    margin-bottom: 10%;
+    margin-bottom: 6%;
     opacity: 0;
 }
 
@@ -525,6 +525,10 @@ form {
     margin: 0 2%;
 }
 
+.redes-logo:hover{
+    cursor: pointer;
+}
+
 .logo-footer {
     width: 12%;
 }
@@ -659,7 +663,7 @@ form {
         padding-top: 5vh;
     }
     .services-title {
-        margin-top: 15%;
+        margin-top: 0;
     }
     .desktop {
         display: none;
