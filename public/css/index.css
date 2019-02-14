@@ -104,7 +104,7 @@ nav {
 }
 
 .fondo-pomelos {
-    background-image: url(/img/fondo-pomelos.jpg);
+    background-image: url("../img/fondo-pomelos.jpg");
 }
 
 .portada-contenido {
@@ -382,7 +382,7 @@ nav {
 }
 
 .map {
-    background-image: url(/img/mendoza.jpg);
+    background-image: url("../img/mendoza.jpg");
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
